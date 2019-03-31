@@ -1,19 +1,20 @@
 (set-env!
- :dependencies '[[adzerk/bootlaces "0.1.13" :scope "test"]
+ :dependencies '[[adzerk/bootlaces "0.2.0" :scope "test"]
                  [metosin/bat-test "0.4.2" :scope "test"]
                  [org.clojure/tools.nrepl "0.2.13" :scope "test"]
                  [samestep/boot-refresh "0.1.0" :scope "test"]
                  [org.clojure/clojure "1.10.0" :scope "test"]
-                 [org.slf4j/slf4j-simple "1.7.25" :scope "test"]
+                 [org.slf4j/slf4j-simple "1.7.26" :scope "test"]
 
                  [cheshire "5.8.1"]
-                 [com.fzakaria/slf4j-timbre "0.3.12"]
+                 [com.fzakaria/slf4j-timbre "0.3.13"]
+                 [com.taoensso/encore "2.108.1"]
                  [com.taoensso/timbre "4.10.0"]
                  [io.logz.sender/logzio-sender "1.0.18" :exclusions [org.sl4j/slf4j-api]]
-                 [org.slf4j/jcl-over-slf4j "1.7.25"]
-                 [org.slf4j/jul-to-slf4j "1.7.25"]
-                 [org.slf4j/log4j-over-slf4j "1.7.25"]
-                 [org.slf4j/slf4j-api "1.7.25"]]
+                 [org.slf4j/jcl-over-slf4j "1.7.26"]
+                 [org.slf4j/jul-to-slf4j "1.7.26"]
+                 [org.slf4j/log4j-over-slf4j "1.7.26"]
+                 [org.slf4j/slf4j-api "1.7.26"]]
  :source-paths #{"src/clj"})
 
 (run! #(ns-unmap *ns* %) '[test])
