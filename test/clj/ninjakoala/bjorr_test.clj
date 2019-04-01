@@ -9,7 +9,7 @@
    :?file "file"
    :hostname_ (delay "hostname")
    :?line "line"
-   :level "level"
+   :level :level
    :?ns-str "ns-str"
    :msg_ (delay "msg")
    :instant "instant"})
@@ -18,7 +18,7 @@
   {"@timestamp" "instant"
    "exception" "stacktrace of err"
    "logger" "ns-str"
-   "loglevel" "level"
+   "loglevel" "LEVEL"
    "message" "msg"
    "thread" "thread"})
 

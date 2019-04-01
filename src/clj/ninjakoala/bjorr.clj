@@ -230,7 +230,7 @@
                                 :?file (when add-file? (:?file log))
                                 :hostname_ (when add-hostname? (force (:hostname_ log)))
                                 :?line (when add-line-number? (:?line log))
-                                :level (:level log)
+                                :level (str/upper-case (name (:level log)))
                                 :?ns-str (:?ns-str log)
                                 :msg_ (force (:msg_ log))
                                 :instant (:instant log)
